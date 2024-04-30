@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/template.css">
+    <template id="card-template">
+        <article class="card" user-id="">
+            <div class="card-header">
+                <p class="card-username">FirstName LastName</p>
+                <p class="card-user-data">Employee 1 user data</p>
+            </div>
+            <hr>
+            <div class="card-body">
+                <div class="pto-info">
+                    <div class="pto-title"><span>Past PTO</span></div>
+                    <div class="past-pto pto-info">
+                        <div class="season-container">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pto-info">
+                    <div class="pto-title"><span>Current PTO</span></div>
+                    <div class="current-pto pto-info">
+                        <div class="season-container"></div>
+                    </div>
+                </div>
+                <div class="pto-info">
+                    <div class="pto-title"><span>Upcoming PTO</span></div>
+                    <div class="upcoming-pto pto-info">
+                        <div class="season-container"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        </template>
+</head>
+<body>
+    <nav class="dashboard-navbar">
+        <div class="dashboard_navbar-items">
+            <span class="navbar-items_span">Pto Manager</span>
+        </div>
+        <div class="dashboard_navbar-items">
+            <a href="guestuser.html" id="sign-out"><span class="navbar-items_span">Sign Out</span></a>
+        </div>
+    </nav>
+    <main class="dashboard-layout">
+        <div class="dashboard-box">
+            <div class="select-employee">
+                <select name="employee" id="employee">
+                <option value="">--Select Employee--</option>
+                <option value="employee-1">Employee 1</option>
+                <option value="employee-2">Employee 2</option>
+                <option value="employee-3">Employee 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="dashboard-box">
+            <p class="calendar-title">Start date</p>
+            <div class="calendar">
+            <header>
+                <h3></h3>
+                <nav>
+                <button id="prev"></button>
+                <button id="next"></button>
+                </nav>
+            </header>
+            <section>
+                <ul class="days">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+                </ul>
+                <ul class="dates"></ul>
+            </section>
+            </div>
+        </div>
+        <div class="dashboard-box">
+            <p class="calendar-title">End date</p>
+            <div class="calendar-end-date">
+            <header>
+                <h3></h3>
+                <nav>
+                <button id="prev-end-date"></button>
+                <button id="next-end-date"></button>
+                </nav>
+            </header>
+            <section>
+                <ul class="days-end-date">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+                </ul>
+                <ul class="dates-end-date"></ul>
+            </section>
+            </div>
+        </div>
+        <div class="dashboard-box">
+            <button class="add-pto">Add PTO</button>
+        </div>
+    </main>
+
+    <div class="cards-container" id="cards-container">
+
+    </div>
+</body>
+</html>

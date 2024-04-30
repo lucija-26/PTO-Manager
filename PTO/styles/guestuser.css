@@ -1,0 +1,33 @@
+.guest-user {
+    background-color: #eea1cd;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+
+.navbar-items_span {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.guest-user_box {
+    background-color: #f9cee7;
+    height: 500px;
+    width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guest-user_paragraphs {
+    text-align: center;
+}
+
+.data-unavailable {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
